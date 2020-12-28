@@ -46,7 +46,7 @@ TEST(Queue, copied_queue_is_equal_to_source_one)
 
 	EXPECT_EQ(q, q1);
 }
-/*
+
 TEST(Queue, copied_queue_has_its_own_memory)
 {
 	Queue<int> q(5);
@@ -63,7 +63,7 @@ TEST(Queue, can_assign_queues_of_equal_size)
 
 	ASSERT_NO_THROW(q1 = q);
 }
-/*
+
 TEST(Queue, can_assign_queues_of_different_size)
 {
 	Queue<int> q(7);
@@ -77,7 +77,7 @@ TEST(Queue, can_assign_queue_to_itself)
 	Queue<int> q(5);
 	ASSERT_NO_THROW(q = q);
 }
-/*
+
 TEST(Queue, assign_operator_change_queue_size)
 {
 	Queue<int> q(7);
@@ -158,4 +158,3 @@ TEST(Queue, cant_pop_element_from_empty_queue)
 
 	ASSERT_ANY_THROW(q.pop());
 }
-*/

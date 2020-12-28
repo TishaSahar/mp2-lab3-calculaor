@@ -1,14 +1,10 @@
-#pragma once
-
 #include<iostream>
-#include<exception>
 
 using namespace std;
 
 template <class T>
 class ICollection {
 public:
-	//virtual ~ICollection() = 0;
 	virtual int GetSize() = 0;
 
 	virtual void push(const T& v) = 0;
@@ -93,11 +89,11 @@ template <class T>
 int Queue<T>::GetSize(){
 	return n;
 }
-/*
+
 template <class T>
 int Queue<T>::next(int i) {
 	return ((i + 1) % n);
-}*/
+}
 
 template <class T>
 Queue<T>::~Queue() {
